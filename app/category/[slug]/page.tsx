@@ -1,7 +1,49 @@
-export default function CategoryPage() {
+import ProjectCard from "@/components/ProjectCard";
+import { getProjectsByCategory } from "@/lib/projects";
+import { log } from "console";
+import { notFound } from "next/navigation";
+
+const categoryTitles: Record<string, string> = {
+  furniture: "Furniture",
+  whittling: "Whittling",
+  other: "Other",
+};
+
+export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
+  log("slug", slug);
+
+  const projects = getProjectsByCategory(slug);
+  log("projects", projects);
+
+  if (!projects || projects.length === 0) {
+    notFound();
+  }
+  const categoryTitle = categoryTitles[slug] ?? slug;
+
   return (
-    <div>
-      <h1>Category</h1>
+    <div className="space-y-8">
+      {/* Header */}
+      <section>
+        <h1 className="text-3xl font-bold">{categoryTitle}</h1>
+        <p className="text-gray-600">Projects in the {categoryTitle.toLowerCase()} category.</p>
+      </section>
+
+      {/* Grid */}
+      <section>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              title={project.title}
+              description={project.description}
+              cover={project.cover}
+              href={`/project/${project.slug}`}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
