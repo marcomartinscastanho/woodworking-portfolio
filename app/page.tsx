@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import CategoryCard from "@/components/CategoryCard";
 
 const categories = [
   {
@@ -39,24 +38,7 @@ export default function HomePage() {
       <section>
         <div className="grid gap-6 md:grid-cols-3">
           {categories.map((category) => (
-            <Link
-              key={category.href}
-              href={category.href}
-              className="group overflow-hidden rounded-xl border bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
-            >
-              <div className="relative aspect-4/3 overflow-hidden">
-                <Image
-                  src={category.image}
-                  alt={category.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="mb-2 text-xl font-semibold">{category.title}</h3>
-                <p className="text-sm text-gray-600">{category.description}</p>
-              </div>
-            </Link>
+            <CategoryCard key={category.href} {...category} />
           ))}
         </div>
       </section>
