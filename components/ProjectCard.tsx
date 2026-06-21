@@ -1,3 +1,4 @@
+import { cn } from "@/lib/classname";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,25 +7,17 @@ type ProjectCardProps = {
   description: string;
   href: string;
   cover: string;
+  className?: string;
 };
 
-export default function ProjectCard({ title, description, href, cover }: ProjectCardProps) {
+export default function ProjectCard({ title, description, href, cover, className }: ProjectCardProps) {
   return (
     <Link
       href={href}
-      className="
-        group
-        block
-        overflow-hidden
-        rounded-xl
-        border
-        bg-white
-        shadow-sm
-        transition-all
-        duration-200
-        hover:-translate-y-1
-        hover:shadow-lg
-      "
+      className={cn(
+        "group block overflow-hidden rounded-xl border bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg",
+        className,
+      )}
     >
       {/* Image */}
       <div className="relative aspect-4/3 overflow-hidden">

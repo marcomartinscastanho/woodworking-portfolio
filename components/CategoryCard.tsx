@@ -1,3 +1,4 @@
+import { cn } from "@/lib/classname";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,13 +7,17 @@ type CategoryCardProps = {
   description: string;
   href: string;
   image: string;
+  className?: string;
 };
 
-export default function CategoryCard({ title, description, href, image }: CategoryCardProps) {
+export default function CategoryCard({ title, description, href, image, className }: CategoryCardProps) {
   return (
     <Link
       href={href}
-      className="group block overflow-hidden rounded-xl border bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+      className={cn(
+        "group block overflow-hidden rounded-xl border bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg",
+        className,
+      )}
     >
       {/* Image */}
       <div className="relative aspect-4/3 overflow-hidden">
