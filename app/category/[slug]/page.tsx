@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 export const dynamic = "force-static";
 
 export async function generateStaticParams() {
-  return [{ category: "furniture" }, { category: "whittling" }, { category: "other" }];
+  return [{ slug: "furniture" }, { slug: "whittling" }, { slug: "other" }];
 }
 
 const categoryTitles: Record<string, string> = {
@@ -15,8 +15,7 @@ const categoryTitles: Record<string, string> = {
 };
 
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug;
+  const { slug } = await params;
   const categoryTitle = categoryTitles[slug] ?? slug;
   const projects = getProjectsByCategory(slug);
   if (!projects || projects.length === 0) {
