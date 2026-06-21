@@ -7,10 +7,11 @@ type ProjectCardProps = {
   description: string;
   href: string;
   cover: string;
+  priority?: boolean;
   className?: string;
 };
 
-export default function ProjectCard({ title, description, href, cover, className }: ProjectCardProps) {
+export default function ProjectCard({ title, description, href, cover, priority, className }: ProjectCardProps) {
   return (
     <Link
       href={href}
@@ -25,6 +26,7 @@ export default function ProjectCard({ title, description, href, cover, className
           src={cover}
           alt={title}
           fill
+          priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="
             object-cover

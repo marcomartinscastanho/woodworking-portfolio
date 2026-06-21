@@ -7,10 +7,11 @@ type CategoryCardProps = {
   description: string;
   href: string;
   image: string;
+  priority?: boolean;
   className?: string;
 };
 
-export default function CategoryCard({ title, description, href, image, className }: CategoryCardProps) {
+export default function CategoryCard({ title, description, href, image, priority, className }: CategoryCardProps) {
   return (
     <Link
       href={href}
@@ -25,6 +26,7 @@ export default function CategoryCard({ title, description, href, image, classNam
           src={image}
           alt={title}
           fill
+          priority={priority}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />

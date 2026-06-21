@@ -35,8 +35,8 @@ export default function HomePage() {
       {/* Categories */}
       <section>
         <div className="grid gap-6 md:grid-cols-3">
-          {categories.map((category) => (
-            <CategoryCard key={category.href} {...category} />
+          {categories.map((category, index) => (
+            <CategoryCard key={category.href} priority={index === 0} {...category} />
           ))}
         </div>
       </section>
