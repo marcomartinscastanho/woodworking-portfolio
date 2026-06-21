@@ -1,6 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByCategory } from "@/lib/projects";
-import { log } from "console";
 import { notFound } from "next/navigation";
 
 const categoryTitles: Record<string, string> = {
@@ -12,15 +11,11 @@ const categoryTitles: Record<string, string> = {
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  log("slug", slug);
-
+  const categoryTitle = categoryTitles[slug] ?? slug;
   const projects = getProjectsByCategory(slug);
-  log("projects", projects);
-
   if (!projects || projects.length === 0) {
     notFound();
   }
-  const categoryTitle = categoryTitles[slug] ?? slug;
 
   return (
     <div className="space-y-8">
