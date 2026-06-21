@@ -5,6 +5,21 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    "title": "Banquinho",
+    "category": "furniture",
+    "slug": "banquinho",
+    "date": "2024-04-18T00:00:00.000Z",
+    "featured": false,
+    "cover": "/projects/banquinho/cover.png",
+    "images": [
+      "/projects/banquinho/1.png",
+      "/projects/banquinho/2.png",
+      "/projects/banquinho/cover.png"
+    ],
+    "description": "Small pine stool made at a workshop to learn the basics .",
+    "content": "\nA small pine wood stool made at an initiation to woodworking workshop at [FICA](https://fica-oc.pt/en/carpentry-workshops) in Lisbon.\n"
+  },
+  {
     "title": "Record Player Console",
     "category": "furniture",
     "slug": "record-player-console",
@@ -44,6 +59,40 @@ export const projects: Project[] = [
     "content": "\nThis console was built to hold my record player and store my vinyl collection.\n\nIt is entirely made from reclaimed pallet wood, cleaned and assembled to create a stable frame.\n\nIt was my first major project.\n"
   },
   {
+    "title": "Jewelry Box",
+    "category": "other",
+    "slug": "jewelry-box",
+    "date": "2024-08-03T00:00:00.000Z",
+    "featured": true,
+    "cover": "/projects/jewelry-box/cover.png",
+    "images": [
+      "/projects/jewelry-box/1.png",
+      "/projects/jewelry-box/2.png",
+      "/projects/jewelry-box/3.png",
+      "/projects/jewelry-box/4.png",
+      "/projects/jewelry-box/5.png",
+      "/projects/jewelry-box/6.png",
+      "/projects/jewelry-box/cover.png"
+    ],
+    "description": "A wooden jewelry box.",
+    "content": "\nA wooden jewelry box, made on a initiation to woodworking workshop at [AKTO Studio](https://www.aktostudio.com/iniciacao-marcenaria) in Lisbon focused on learning basic wood joints.\n"
+  },
+  {
+    "title": "Olive Wood Coat Hangers",
+    "category": "other",
+    "slug": "olive-coat-hangers",
+    "date": "2026-06-03T00:00:00.000Z",
+    "featured": true,
+    "cover": "/projects/olive-coat-hangers/cover.png",
+    "images": [
+      "/projects/olive-coat-hangers/1.png",
+      "/projects/olive-coat-hangers/2.png",
+      "/projects/olive-coat-hangers/3.png"
+    ],
+    "description": "Coat hangers made from branches cut from my parents’ olive trees.",
+    "content": "\nMy parents have olive trees.\n\nEvery year, after picking the olives, my father cuts the older and taller branches, to keep the tree small enough.\n\nThe cut branches are usually used as firewood, but this time I asked my father to keep some for me after seeing a similar project somewhere on the web.\n\nI cut them to shape, removed the bark, drilled holes, applied wax, and they're now on the wall at home.\n"
+  },
+  {
     "title": "Ouri",
     "category": "other",
     "slug": "ouri-board",
@@ -77,20 +126,5 @@ export const projects: Project[] = [
     ],
     "description": "A simple fox carved from the starter wood block included with carving knives.",
     "content": "\nThis was my first whittling project done without supervision, carved from the starter block included in the knife set.\n\nI did it following this [YouTube tutorial](https://www.youtube.com/watch?v=QI-Qu1FNUio).\n\nThe goal was to restart practicing basics of wood whittling.\n"
-  },
-  {
-    "title": "Olive Wood Coat Hangers",
-    "category": "other",
-    "slug": "olive-coat-hangers",
-    "date": "2026-06-03T00:00:00.000Z",
-    "featured": true,
-    "cover": "/projects/olive-coat-hangers/cover.png",
-    "images": [
-      "/projects/olive-coat-hangers/1.png",
-      "/projects/olive-coat-hangers/2.png",
-      "/projects/olive-coat-hangers/3.png"
-    ],
-    "description": "Coat hangers made from branches cut from my parents’ olive trees.",
-    "content": "\nMy parents have olive trees.\n\nEvery year, after picking the olives, my father cuts the older and taller branches, to keep the tree small enough.\n\nThe cut branches are usually used as firewood, but this time I asked my father to keep some for me after seeing a similar project somewhere on the web.\n\nI cut them to shape, removed the bark, drilled holes, applied wax, and they're now on the wall at home.\n"
   }
 ];
