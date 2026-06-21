@@ -37,7 +37,7 @@ export const projects: Project[] = [
     "category": "furniture",
     "slug": "akto-chair",
     "date": "2024-08-10T00:00:00.000Z",
-    "featured": true,
+    "featured": false,
     "cover": "/projects/akto-chair/cover.png",
     "images": [
       "/projects/akto-chair/1.png",

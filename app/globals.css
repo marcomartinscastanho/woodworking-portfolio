@@ -1,2 +1,17 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+.embla__dots {
+  opacity: 0.5;
+}
+.embla__dots:hover {
+  opacity: 1;
+}
+
+.embla__dot {
+  opacity: 0.5;
+}
+
+.embla__dot--selected {
+  opacity: 1;
+}
