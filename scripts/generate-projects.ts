@@ -5,30 +5,25 @@ import path from "path";
 
 const contentDir = path.join(process.cwd(), "content");
 
-const categories = fs.readdirSync(contentDir);
+const files = fs.readdirSync(contentDir);
 const projects: Project[] = [];
 
-for (const category of categories) {
-  const categoryPath = path.join(contentDir, category);
-  const files = fs.readdirSync(categoryPath);
+for (const file of files) {
+  const filePath = path.join(contentDir, file);
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const { data, content } = matter(raw);
 
-  for (const file of files) {
-    const filePath = path.join(categoryPath, file);
-    const raw = fs.readFileSync(filePath, "utf-8");
-    const { data, content } = matter(raw);
-
-    projects.push({
-      title: data.title,
-      category: data.category,
-      slug: data.slug,
-      date: data.date,
-      featured: data.featured ?? false,
-      cover: data.cover,
-      images: data.images || [],
-      description: data.description,
-      content,
-    });
-  }
+  projects.push({
+    title: data.title,
+    category: data.category,
+    slug: data.slug,
+    date: data.date,
+    featured: data.featured ?? false,
+    cover: data.cover,
+    images: data.images || [],
+    description: data.description,
+    content,
+  });
 }
 
 const tsContent = `
