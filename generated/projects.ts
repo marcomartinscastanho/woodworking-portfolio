@@ -33,6 +33,30 @@ export const projects: Project[] = [
     "content": "\n...\n"
   },
   {
+    "title": "Chair",
+    "category": "furniture",
+    "slug": "akto-chair",
+    "date": "2024-08-10T00:00:00.000Z",
+    "featured": true,
+    "cover": "/projects/akto-chair/cover.png",
+    "images": [
+      "/projects/akto-chair/1.png",
+      "/projects/akto-chair/2.png",
+      "/projects/akto-chair/3.png",
+      "/projects/akto-chair/4.png",
+      "/projects/akto-chair/5.png",
+      "/projects/akto-chair/6.png",
+      "/projects/akto-chair/7.png",
+      "/projects/akto-chair/8.png",
+      "/projects/akto-chair/9.png",
+      "/projects/akto-chair/10.png",
+      "/projects/akto-chair/11.png",
+      "/projects/akto-chair/cover.png"
+    ],
+    "description": "...",
+    "content": "\nA custom designed chair made at a woodworking workshop at [AKTO Studio](https://www.aktostudio.com/marcenaria-2) in Lisbon focused on learning basic wood joints.\n"
+  },
+  {
     "title": "Jewelry Box",
     "category": "other",
     "slug": "jewelry-box",
@@ -124,6 +148,21 @@ export const projects: Project[] = [
     ],
     "description": "Small sofa console table to use as support behind my living room couch.",
     "content": "\nThis console was built to hold my record player and store my vinyl collection.\n\nIt is entirely made from reclaimed pallet wood, cleaned and assembled to create a stable frame.\n\nIt was my first major project.\n"
+  },
+  {
+    "title": "Wood Spoon",
+    "category": "whittling",
+    "slug": "spoon-1",
+    "date": "2025-01-18T00:00:00.000Z",
+    "featured": false,
+    "cover": "/projects/spoon-1/cover.png",
+    "images": [
+      "/projects/spoon-1/1.png",
+      "/projects/spoon-1/2.png",
+      "/projects/spoon-1/cover.png"
+    ],
+    "description": "...",
+    "content": "\nMade at an initiation to spoon carving workshop at [FICA](https://fica-oc.pt/en/carpentry-workshops) in Lisbon.\n"
   },
   {
     "title": "Starter Fox",
