@@ -5,7 +5,7 @@ export default function Header() {
     <header className="border-b">
       <div className="mx-auto max-w-6xl p-4">
         <Link href="/" className="text-2xl font-bold">
-          My Woodworking Projects
+          Marco&apos;s Woodworking Projects
         </Link>
       </div>
     </header>
