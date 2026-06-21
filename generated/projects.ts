@@ -14,7 +14,16 @@ export const projects: Project[] = [
     "images": [
       "/projects/record-player-console/1.png",
       "/projects/record-player-console/2.png",
-      "/projects/record-player-console/3.png"
+      "/projects/record-player-console/3.png",
+      "/projects/record-player-console/4.png",
+      "/projects/record-player-console/5.png",
+      "/projects/record-player-console/6.png",
+      "/projects/record-player-console/7.png",
+      "/projects/record-player-console/8.png",
+      "/projects/record-player-console/9.png",
+      "/projects/record-player-console/10.png",
+      "/projects/record-player-console/11.png",
+      "/projects/record-player-console/cover.png"
     ],
     "description": "Console for a record player with integrated vinyl storage, built from pallet wood.",
     "content": "\nThis console was built to hold my record player and store my vinyl collection.\n\nIt is entirely made from reclaimed pallet wood, cleaned and assembled to create a stable frame.\n\nIt was my first major project.\n"
