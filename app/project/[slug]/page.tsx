@@ -13,7 +13,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <article className="space-y-10">
+    <article className="space-y-10 max-w-4xl mx-auto">
       {/* Hero image */}
       <div className="relative aspect-video overflow-hidden rounded-xl">
         <Image src={project.cover} alt={project.title} fill priority className="object-cover" />
