@@ -34,7 +34,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       {/* Gallery */}
       <section>
         <h2 className="mb-4 text-2xl font-semibold">Gallery</h2>
-
         <ProjectCarousel images={project.images} title={project.title} />
       </section>
     </article>
