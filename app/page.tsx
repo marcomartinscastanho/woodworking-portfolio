@@ -28,10 +28,8 @@ export default function HomePage() {
       <section className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">My Woodworking Portfolio</h1>
         <p className="max-w-3xl text-lg text-gray-600">
-          {/** # FIXME: Replace this with a real introduction */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur nulla nec rhoncus vulputate.
-          Nunc vehicula eget sapien eget efficitur. Suspendisse tincidunt velit ac nibh sollicitudin, nec cursus nisl
-          ultricies.
+          Welcome to my woodworking portfolio! Here, I share my projects as an amateur woodworker. From furniture to
+          small whittling pieces, this portfolio is a reflection of my favourite hobby.
         </p>
       </section>
       {/* Categories */}
