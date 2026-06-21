@@ -2,6 +2,12 @@ import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByCategory } from "@/lib/projects";
 import { notFound } from "next/navigation";
 
+export const dynamic = "force-static";
+
+export async function generateStaticParams() {
+  return [{ category: "furniture" }, { category: "whittling" }, { category: "other" }];
+}
+
 const categoryTitles: Record<string, string> = {
   furniture: "Furniture",
   whittling: "Whittling",

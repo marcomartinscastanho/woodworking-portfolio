@@ -3,7 +3,15 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 
 import ProjectCarousel from "@/components/ProjectCarousel";
-import { getProjectBySlug } from "@/lib/projects";
+import { getAllProjects, getProjectBySlug } from "@/lib/projects";
+
+export const dynamic = "force-static";
+
+export async function generateStaticParams() {
+  return getAllProjects().map((project) => ({
+    slug: project.slug,
+  }));
+}
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
