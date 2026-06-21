@@ -12,6 +12,6 @@ description: Console for a record player with integrated vinyl storage, built fr
 
 This console was built to hold my record player and store my vinyl collection.
 
-The main structure is made from reclaimed pallet wood, cleaned and reassembled to create a stable frame.
+It is entirely made from reclaimed pallet wood, cleaned and assembled to create a stable frame.
 
-The lower section includes open storage for vinyl records, while the top surface is reinforced to support the weight of the turntable.
+It was my first major project.

@@ -10,8 +10,10 @@ images:
 description: Coat hangers made from branches cut from my parents’ olive trees.
 ---
 
-These coat hangers were made from olive branches collected from my parents’ trees.
+My parents have olive trees.
 
-The branches were cut, dried, and shaped into functional hangers while preserving natural curves.
+Every year, after picking the olives, my father cuts the older and taller branches, to keep the tree small enough.
 
-Each piece retains its organic shape, making every hanger slightly unique.
+The cut branches are usually used as firewood, but this time I asked my father to keep some for me after seeing a similar project somewhere on the web.
+
+I cut them to shape, removed the bark, drilled holes, applied wax, and they're now on the wall at home.
