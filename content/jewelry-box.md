@@ -2,7 +2,7 @@
 title: Jewelry Box
 category: other
 slug: jewelry-box
-date: 2024-08-03
+date: 2024-08-10
 featured: true
 cover: /projects/jewelry-box/cover.png
 images:

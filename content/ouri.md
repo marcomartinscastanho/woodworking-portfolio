@@ -3,7 +3,7 @@ title: Ouri
 category: other
 slug: ouri-board
 date: 2023-08-09
-featured: true
+featured: false
 cover: /projects/ouri/cover.png
 images:
   - /projects/ouri/1.png
