@@ -2,6 +2,8 @@
 title: Record Player Console
 category: furniture
 slug: record-player-console
+date: 2024-01-13
+featured: true
 cover: /projects/record-player-console/cover.png
 images:
   - /projects/record-player-console/1.png

@@ -8,6 +8,8 @@ export type Project = {
   title: string;
   category: "furniture" | "whittling" | "other";
   slug: string;
+  date: string;
+  featured: boolean;
   cover: string;
   images: string[];
   description: string;
@@ -32,6 +34,8 @@ export function getAllProjects(): Project[] {
         title: data.title,
         category: data.category,
         slug: data.slug,
+        date: data.date,
+        featured: data.featured ?? false,
         cover: data.cover,
         images: data.images || [],
         description: data.description,
@@ -43,8 +47,20 @@ export function getAllProjects(): Project[] {
   return projects;
 }
 
+function sortProjects(projects: Project[]): Project[] {
+  return [...projects].sort((a, b) => {
+    // Featured first
+    if (a.featured !== b.featured) {
+      return a.featured ? -1 : 1;
+    }
+
+    // Then newest first
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+}
+
 export function getProjectsByCategory(category: string): Project[] {
-  return getAllProjects().filter((p) => p.category === category);
+  return sortProjects(getAllProjects().filter((p) => p.category === category));
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {

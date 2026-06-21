@@ -2,6 +2,8 @@
 title: Olive Wood Coat Hangers
 category: other
 slug: olive-coat-hangers
+date: 2026-06-03
+featured: true
 cover: /projects/olive-coat-hangers/cover.png
 images:
   - /projects/olive-coat-hangers/1.png

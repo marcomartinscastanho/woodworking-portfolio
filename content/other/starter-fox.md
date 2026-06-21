@@ -2,6 +2,8 @@
 title: Starter Fox
 category: whittling
 slug: starter-fox
+date: 2026-05-24
+featured: true
 cover: /projects/starter-fox/cover.png
 images:
   - /projects/starter-fox/1.png
