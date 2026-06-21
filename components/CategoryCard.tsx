@@ -20,6 +20,7 @@ export default function CategoryCard({ title, description, href, image }: Catego
           src={image}
           alt={title}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
