@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByCategory } from "@/lib/projects";
+import { Category } from "@/types/project";
 import { notFound } from "next/navigation";
 
 export const dynamic = "force-static";
@@ -17,7 +18,7 @@ const categoryTitles: Record<string, string> = {
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const categoryTitle = categoryTitles[slug] ?? slug;
-  const projects = getProjectsByCategory(slug);
+  const projects = getProjectsByCategory(slug as Category);
   if (!projects || projects.length === 0) {
     notFound();
   }
