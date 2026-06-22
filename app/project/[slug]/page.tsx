@@ -21,7 +21,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <article className="space-y-10 max-w-4xl mx-auto">
+    <article className="w-full space-y-10 max-w-4xl mx-auto">
       {/* Hero image */}
       <div className="relative aspect-video overflow-hidden rounded-xl">
         <Image src={project.cover} alt={project.title} fill priority className="object-cover" />
@@ -40,7 +40,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* Gallery */}
-      <section>
+      <section className="w-full">
         <h2 className="mb-4 text-2xl font-semibold">Gallery</h2>
         <ProjectCarousel images={project.images} title={project.title} />
       </section>
