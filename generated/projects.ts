@@ -20,6 +20,21 @@ export const projects: Project[] = [
     "content": "\nA small pine wood stool made at an initiation to woodworking workshop at [FICA](https://fica-oc.pt/en/carpentry-workshops) in Lisbon.\n"
   },
   {
+    "title": "Bedside Cube",
+    "category": "furniture",
+    "slug": "bedside-cube",
+    "date": "2025-12-05T00:00:00.000Z",
+    "featured": false,
+    "cover": "/projects/bedside-cube/cover.png",
+    "images": [
+      "/projects/bedside-cube/1.png",
+      "/projects/bedside-cube/2.png",
+      "/projects/bedside-cube/3.png"
+    ],
+    "description": "Open oak cube that serves as bedside table",
+    "content": "\nMy sister needed a bedside table.\n\nI once had one of those famouse cubes as bedside table. Thought I could do one for my sister.\n\nMy first experiment with reinforced miter joints.\n"
+  },
+  {
     "title": "Cat Tower",
     "category": "other",
     "slug": "cat-tower",
@@ -144,10 +159,15 @@ export const projects: Project[] = [
     "images": [
       "/projects/sofa-console-table/1.png",
       "/projects/sofa-console-table/2.png",
-      "/projects/sofa-console-table/3.png"
+      "/projects/sofa-console-table/3.png",
+      "/projects/sofa-console-table/4.png",
+      "/projects/sofa-console-table/5.png",
+      "/projects/sofa-console-table/6.png",
+      "/projects/sofa-console-table/7.png",
+      "/projects/sofa-console-table/cover.png"
     ],
     "description": "Small sofa console table to use as support behind my living room couch.",
-    "content": "\nThis console was built to hold my record player and store my vinyl collection.\n\nIt is entirely made from reclaimed pallet wood, cleaned and assembled to create a stable frame.\n\nIt was my first major project.\n"
+    "content": "\nMy first project that resembles something professional.\n\nI designed it on a sketch software, used proper wood (not pallet wood) and created a [program to plot the pieces](https://github.com/marcomartinscastanho/woodworking-project-plotter) to cut from the panels.\n\nThe base was designed as 2 pieces to make it easier to transport, but the single-piece top board makes it look like a single object.\n\nMade from oak.\n"
   },
   {
     "title": "Wood Spoon",
