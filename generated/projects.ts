@@ -23,13 +23,17 @@ export const projects: Project[] = [
     "title": "Bedside Cube",
     "category": "furniture",
     "slug": "bedside-cube",
-    "date": "2025-12-05T00:00:00.000Z",
+    "date": "2025-09-25T00:00:00.000Z",
     "featured": false,
     "cover": "/projects/bedside-cube/cover.png",
     "images": [
       "/projects/bedside-cube/1.png",
       "/projects/bedside-cube/2.png",
-      "/projects/bedside-cube/3.png"
+      "/projects/bedside-cube/3.png",
+      "/projects/bedside-cube/4.png",
+      "/projects/bedside-cube/5.png",
+      "/projects/bedside-cube/6.png",
+      "/projects/bedside-cube/cover.png"
     ],
     "description": "Open oak cube that serves as bedside table",
     "content": "\nMy sister needed a bedside table.\n\nI once had one of those famouse cubes as bedside table. Thought I could do one for my sister.\n\nMy first experiment with reinforced miter joints.\n"
@@ -153,7 +157,7 @@ export const projects: Project[] = [
     "title": "Sofa Console Table",
     "category": "furniture",
     "slug": "sofa-console-table",
-    "date": "2025-12-05T00:00:00.000Z",
+    "date": "2025-12-04T00:00:00.000Z",
     "featured": false,
     "cover": "/projects/sofa-console-table/cover.png",
     "images": [
