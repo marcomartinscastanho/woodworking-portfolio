@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate": "tsx scripts/generate-projects.ts",
+    "prebuild": "npm run generate",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
@@ -33,7 +35,9 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
-    "typescript": "^5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3",
     "wrangler": "^4.103.0"
   }
 }
